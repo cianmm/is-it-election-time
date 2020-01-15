@@ -28,6 +28,8 @@ const Layout = ({ children }) => {
       style={{
         textAlign: `center`,
         height: "100%",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -43,10 +45,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer
           style={{
-            flexGrow: 2,
-            position: "absolute",
-            bottom: 0,
-            width: "100%",
+            marginTop: "auto",
           }}
         >
           <p>
