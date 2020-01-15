@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import IsItTime from "../components/IsItTime";
 import GetReadyListItem from "../components/GetReadyListItem/GetReadyListItem";
-import { registerDeadline } from "../constants";
+import { registerDeadline, generalElectionDeadline } from "../constants";
 
 const IndexPage = () => (
   <Layout>
@@ -33,6 +33,13 @@ const IndexPage = () => (
         If your address is wrong, update it on the supplemental register by
         filling in this form, having it witnessed at your local Garda station,
         and get it to your old address's County Council.
+      </GetReadyListItem>
+      <GetReadyListItem
+        href="https://ireland.isidewith.com/political-quiz"
+        deadline={generalElectionDeadline}
+      >
+        If you don't know who you're voting for, see which parties align with
+        your values.
       </GetReadyListItem>
     </ul>
   </Layout>
