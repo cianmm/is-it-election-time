@@ -1,4 +1,4 @@
-# Is It General Election Time?
+# [Is It General Election Time Yet?](https://www.IsItGeneralElectionTimeYet.com)
 
 I swear to god if I hear one bit of whining about this being a gatsby and react project to serve a single page with effectively zero styling I will come down there and take away PR-STV and then nobody will be laughing.
 
@@ -14,4 +14,4 @@ I swear to god if I hear one bit of whining about this being a gatsby and react 
 
 ### Deploy
 
-Be Cian and `gatsby deploy`
+Be Cian and `yarn deploy`

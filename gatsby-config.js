@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `IsItGeneralElectionTime.com`,
+    title: `IsItGeneralElectionTimeYet.com`,
     description: `Ever wondered if it was time for the 2020 General Election? Now you can have your computer tell you!`,
     author: `@cianmm`,
   },
