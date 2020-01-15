@@ -4,7 +4,6 @@ module.exports = {
     description: `Ever wondered if it was time for the 2020 General Election? Now you can have your computer tell you!`,
     author: `@cianmm`,
   },
-  pathPrefix: "/is-it-election-time",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
