@@ -1,17 +1,8 @@
-import React from "react"
+import React from "react";
+import { isToday } from "../utils/isToday";
 
 const IsItTime = () => {
-  function isTodayGeneralElectionDay() {
-    const today = new Date()
-    const electionDay = new Date("2020-02-08")
+  return <h1>{isToday("2020-02-08") ? "YES" : "NO"}.</h1>;
+};
 
-    return (
-      electionDay.getDate() == today.getDate() &&
-      electionDay.getMonth() == today.getMonth() &&
-      electionDay.getFullYear() == today.getFullYear()
-    )
-  }
-  return <h1>{isTodayGeneralElectionDay() ? "YES" : "NO"}.</h1>
-}
-
-export default IsItTime
+export default IsItTime;

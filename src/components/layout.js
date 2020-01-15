@@ -5,12 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header";
+import "./layout.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div
@@ -51,33 +51,46 @@ const Layout = ({ children }) => {
           <p>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/cianmm/is-it-election-time"
             >
               Built
             </a>{" "}
             by{" "}
-            <a target="_blank" href="https://www.twitter.com/cianmm">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.twitter.com/cianmm"
+            >
               Cian Mac Mahon
             </a>{" "}
             with
             {` `}
-            <a target="_blank" href="https://www.gatsbyjs.org">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.gatsbyjs.org"
+            >
               Gatsby
             </a>
             {` `}
             because I wanted to give it a shot
           </p>
           <p>
-            <small>I know it's overkill and I don't care</small>
+            <small>
+              I know this is overkill and I don't care. I take no responsibility
+              for any of this being wrong, I put it together instead of going to
+              the gym.
+            </small>
           </p>
         </footer>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
