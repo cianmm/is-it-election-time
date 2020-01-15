@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import IsItTime from "../components/IsItTime";
 import GetReadyListItem from "../components/GetReadyListItem/GetReadyListItem";
+import { registerDeadline } from "../constants";
 
 const IndexPage = () => (
   <Layout>
@@ -12,14 +13,14 @@ const IndexPage = () => (
     <h4 style={{ marginTop: "100px" }}>What should I do to get ready?</h4>
     <ul style={{ maxWidth: "500px", textAlign: "initial" }}>
       <GetReadyListItem
-        deadline="2020-01-22"
+        deadline={registerDeadline}
         href="https://www.checktheregister.ie"
       >
         Ensure you are on the register.
       </GetReadyListItem>
       <GetReadyListItem
         href="https://www.checktheregister.ie/appforms/RFA2%20Supplement%20to%20Register%20of%20Electors%20[English]%20.doc"
-        deadline="2020-01-22"
+        deadline={registerDeadline}
       >
         If you aren't on the register, get added to the supplemental register by
         filling in this form, having it witnessed at your local Garda station,
@@ -27,7 +28,7 @@ const IndexPage = () => (
       </GetReadyListItem>
       <GetReadyListItem
         href="https://www.checktheregister.ie/appforms/RFA3_English_Form.pdf"
-        deadline="2020-01-22"
+        deadline={registerDeadline}
       >
         If your address is wrong, update it on the supplemental register by
         filling in this form, having it witnessed at your local Garda station,

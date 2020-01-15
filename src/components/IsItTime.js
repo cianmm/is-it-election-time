@@ -1,8 +1,18 @@
 import React from "react";
 import { isToday } from "../utils/isToday";
+import { generalElectionDeadline } from "../constants";
 
 const IsItTime = () => {
-  return <h1>{isToday("2020-02-08") ? "YES" : "NO"}.</h1>;
+  const todaysTheDay = isToday(generalElectionDeadline);
+  return (
+    <React.Fragment>
+      <h1>{todaysTheDay ? "YES" : "NO"}.</h1>
+      The General Election is{" "}
+      {todaysTheDay
+        ? "TODAY!"
+        : `on ${new Date(generalElectionDeadline).toDateString()}`}
+    </React.Fragment>
+  );
 };
 
 export default IsItTime;
