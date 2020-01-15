@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Is It General Election Time Yet?" />
     <IsItTime />
     <h4 style={{ marginTop: "100px" }}>What should I do to get ready?</h4>
-    <ul style={{ width: "500px", textAlign: "initial" }}>
+    <ul style={{ maxWidth: "500px", textAlign: "initial" }}>
       <GetReadyListItem
         deadline="2020-01-22"
         href="https://www.checktheregister.ie"
