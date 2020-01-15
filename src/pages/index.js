@@ -6,7 +6,7 @@ import IsItTime from "../components/IsItTime"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Is It General Election Time?" />
     <IsItTime />
   </Layout>
 )

@@ -24,18 +24,39 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div style={{ textAlign: `center` }}>
+    <div
+      style={{
+        textAlign: `center`,
+        height: "100%",
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer
+          style={{
+            flexGrow: 2,
+            position: "absolute",
+            bottom: 0,
+            width: "100%",
+          }}
+        >
           <p>
-            Built by{" "}
+            <a
+              target="_blank"
+              href="https://github.com/cianmm/is-it-election-time"
+            >
+              Built
+            </a>{" "}
+            by{" "}
             <a target="_blank" href="https://www.twitter.com/cianmm">
               Cian Mac Mahon
             </a>{" "}
