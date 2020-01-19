@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
+          padding: "0 10px",
           height: "100%",
           display: "flex",
           flexDirection: "column",
