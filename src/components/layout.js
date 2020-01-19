@@ -49,14 +49,7 @@ const Layout = ({ children }) => {
           }}
         >
           <p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/cianmm/is-it-election-time"
-            >
-              Built
-            </a>{" "}
-            by{" "}
+            Built by{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -74,7 +67,15 @@ const Layout = ({ children }) => {
               Gatsby
             </a>
             {` `}
-            because I wanted to give it a shot
+            because I wanted to give it a shot. Contribute on{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/cianmm/is-it-election-time"
+            >
+              GitHub
+            </a>
+            .
           </p>
           <p>
             <small>
