@@ -56,18 +56,8 @@ const Layout = ({ children }) => {
               href="https://www.twitter.com/cianmm"
             >
               Cian Mac Mahon
-            </a>{" "}
-            with
-            {` `}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.gatsbyjs.org"
-            >
-              Gatsby
             </a>
-            {` `}
-            because I wanted to give it a shot. Contribute on{" "}
+            . Contribute on{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
