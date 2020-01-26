@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 MaybeLink.propTypes = {
-  children: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
   href: PropTypes.string,
   canPerform: PropTypes.bool,
 };

@@ -16,19 +16,14 @@ function GetReadyListItem({ deadline, children, href }) {
   const deadlineDate = new Date(deadline);
 
   return (
-    <li>
-      <React.Fragment>
-        <MaybeLink href={href} canPerform={canPerform}>
-          {children}
-        </MaybeLink>
-        {deadline && (
-          <DeadlineInformation
-            canPerform={canPerform}
-            deadline={deadlineDate}
-          />
-        )}
-      </React.Fragment>
-    </li>
+    <React.Fragment>
+      <MaybeLink href={href} canPerform={canPerform}>
+        {children}
+      </MaybeLink>
+      {deadline && (
+        <DeadlineInformation canPerform={canPerform} deadline={deadlineDate} />
+      )}
+    </React.Fragment>
   );
 }
 

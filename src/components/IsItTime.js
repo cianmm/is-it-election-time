@@ -4,13 +4,15 @@ import { generalElectionDeadline } from "../constants";
 
 const IsItTime = () => {
   const todaysTheDay = isToday(generalElectionDeadline);
+  const openDate = new Date(generalElectionDeadline);
   return (
     <React.Fragment>
-      <h1>{todaysTheDay ? "YES" : "NO"}.</h1>
-      The General Election is{" "}
-      {todaysTheDay
-        ? "TODAY!"
-        : `on ${new Date(generalElectionDeadline).toDateString()}`}
+      <p>
+        <h1 style={{ marginBottom: "25px" }}>{todaysTheDay ? "YES" : "NO"}.</h1>
+        The General Election is{" "}
+        {todaysTheDay ? "TODAY!" : `on ${openDate.toDateString()}`}
+      </p>
+      <p>Polls open at {openDate.getHours()} AM</p>
     </React.Fragment>
   );
 };

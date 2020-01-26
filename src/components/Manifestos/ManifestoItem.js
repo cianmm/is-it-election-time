@@ -15,8 +15,8 @@ const ManifestoItem = ({ href, children }) => {
 };
 
 ManifestoItem.propTypes = {
-  href: PropTypes.string.isRequired,
-  children: PropTypes.number.isRequired,
+  href: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 export default ManifestoItem;
