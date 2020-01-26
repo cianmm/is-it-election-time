@@ -5,34 +5,20 @@ import SEO from "../components/seo";
 import IsItTime from "../components/IsItTime";
 import GetReadyListItem from "../components/GetReadyListItem/GetReadyListItem";
 import { registerDeadline, generalElectionDeadline } from "../constants";
+import ManifestoList from "../components/Manifestos/ManifestoList";
+import UnorderedList from "../components/UnorderedList";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Is It General Election Time Yet?" />
     <IsItTime />
     <h4 style={{ marginTop: "100px" }}>What should I do to get ready?</h4>
-    <ul style={{ maxWidth: "500px", textAlign: "initial", margin: "auto" }}>
+    <UnorderedList>
       <GetReadyListItem
         deadline={registerDeadline}
         href="https://www.checktheregister.ie"
       >
         Ensure you are on the register.
-      </GetReadyListItem>
-      <GetReadyListItem
-        href="https://www.checktheregister.ie/appforms/RFA2%20Supplement%20to%20Register%20of%20Electors%20[English]%20.doc"
-        deadline={registerDeadline}
-      >
-        If you aren't on the register, get added to the supplemental register by
-        filling in this form, having it witnessed at your local Garda station,
-        and get it to your local County Council.
-      </GetReadyListItem>
-      <GetReadyListItem
-        href="https://www.checktheregister.ie/appforms/RFA3_English_Form.pdf"
-        deadline={registerDeadline}
-      >
-        If your address is wrong, update it on the supplemental register by
-        filling in this form, having it witnessed at your local Garda station,
-        and get it to your old address's County Council.
       </GetReadyListItem>
       <GetReadyListItem
         href="https://ireland.isidewith.com/political-quiz"
@@ -41,7 +27,27 @@ const IndexPage = () => (
         If you don't know who you're voting for, see which parties align with
         your values.
       </GetReadyListItem>
-    </ul>
+    </UnorderedList>
+    <h4 style={{ marginTop: "100px" }}>
+      How can I read each party's election policies?
+    </h4>
+    I'll add links to manifestos as I find them. If I've missed one, either{" "}
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://github.com/cianmm/is-it-election-time"
+    >
+      submit a PR on GitHub to add it
+    </a>{" "}
+    or{" "}
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.twitter.com/cianmm"
+    >
+      send me a tweet
+    </a>
+    <ManifestoList />
   </Layout>
 );
 
