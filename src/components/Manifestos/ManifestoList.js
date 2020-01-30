@@ -17,9 +17,15 @@ const ManifestoList = () => {
       <ManifestoItem href="https://www.greenparty.ie/wp-content/uploads/2020/01/GP-manifesto-2020-FINAL.pdf">
         Green Party
       </ManifestoItem>
-      <ManifestoItem>Sinn Féin</ManifestoItem>
-      <ManifestoItem>Labour</ManifestoItem>
-      <ManifestoItem>Social Democrats</ManifestoItem>
+      <ManifestoItem href="https://www.sinnfein.ie/files/2020/SF_GE2020_Manifesto.pdf">
+        Sinn Féin
+      </ManifestoItem>
+      <ManifestoItem href="https://www.labour.ie/manifesto/labour-manifesto-2020/">
+        Labour
+      </ManifestoItem>
+      <ManifestoItem href="https://www.socialdemocrats.ie/what-we-stand-for/">
+        Social Democrats
+      </ManifestoItem>
     </UnorderedList>
   );
 };
